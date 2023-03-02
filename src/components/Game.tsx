@@ -12,9 +12,6 @@ interface Props {
 const Game = ({changePage, name, changeRes}: Props) => {
     const [compCard, setCompCard] = useState('computer card');
     const [playerCard, setPlayerCard] = useState('player card');
-    // const [winner, setWinner] = useState('');
-    // const [compCount, setCompCount] = useState(0)
-    // const [playerCount, setPlayerCount] = useState(0)
     const compDeck = useRef<Card[]>([]);
     const playerDeck = useRef<Card[]>([])
     const matchResult = useRef<GameResult>({winner:'',playerCount:0,compCount:0})
